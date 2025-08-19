@@ -12,9 +12,4 @@ export const notifyError = (message) => {
     position: 'top-right',
     autoClose: 3000,
   });
-};
-function Notification() {
-  return <ToastContainer />;
-}
-
-export default Notification;
+};  
