@@ -18,6 +18,13 @@ import Notification from './components/Notification';
 
 
 
+// import AdminPanel from './pages/AdminPanel';
+// import CoursesAdmin from './pages/CoursesAdmin';
+// import Login from './pages/Login';
+// import Home from './pages/Home';
+
+
+
 // Protected Route component
 const ProtectedRoute = ({ children, allowedRoles }) => {
   const token = getToken();
@@ -64,6 +71,10 @@ function App() {
             <Route path="navbar" element={<Navbar />} />
             <Route path="notification" element={<Notification />} />
             <Route path="courses" element={<CoursesAdmin />} />
+            {/* <Route path="admin" element={<AdminPanel />} />
+            <Route path="courses" element={<CoursesAdmin />} />
+            <Route path="login" element={<Login />} />
+            <Route path="home" element={<Home />} /> */}
           </Route>
 
           {/* Student Routes */}
